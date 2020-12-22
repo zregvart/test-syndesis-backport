@@ -1,7 +1,7 @@
 name: Backport
 
 on:
-  pull_request_target:
+  pull_request:
     types:
       - closed
       - labeled
@@ -12,5 +12,3 @@ jobs:
     name: Backport closed pull request
     steps:
     - uses: syndesisio/backport-action@master
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
