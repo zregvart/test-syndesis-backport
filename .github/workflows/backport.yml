@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     name: Backport closed pull request
     steps:
+    - run: cat "${GITHUB_EVENT_PATH}"
     - uses: syndesisio/backport-action@master
