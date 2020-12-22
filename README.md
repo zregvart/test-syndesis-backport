@@ -1,1 +1,1 @@
-Another test
+Test
